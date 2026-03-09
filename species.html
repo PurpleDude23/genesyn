@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Species | Genesyn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --genesyn-green: #5ebc61; 
+            --deep-black: #050505; 
+            --accent-red: #ff3e3e;
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--deep-black); 
+            color: white; 
+            line-height: 1.4;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Nav */
+        nav { 
+            padding: 25px 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            background: rgba(0,0,0,0.95);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo-long { height: 35px; filter: brightness(0) invert(1); }
+        .nav-links a { color: white; text-decoration: none; margin-left: 30px; font-weight: 700; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; }
+
+        /* Species Header */
+        header {
+            padding: 150px 10% 80px;
+            position: relative;
+        }
+        header h1 {
+            font-size: clamp(3rem, 12vw, 8rem);
+            font-weight: 900;
+            letter-spacing: -6px;
+            line-height: 0.8;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        .tag { color: var(--genesyn-green); font-weight: 700; letter-spacing: 4px; text-transform: uppercase; display: block; margin-bottom: 10px; }
+
+        /* Species List - Row Layout */
+        .species-list {
+            padding: 0 10% 150px;
+        }
+
+        .specimen-row {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
+            margin-bottom: 150px;
+            align-items: center;
+        }
+
+        .specimen-row:nth-child(even) {
+            grid-template-columns: 1fr 1.2fr;
+        }
+        .specimen-row:nth-child(even) .info-pane { order: 1; }
+        .specimen-row:nth-child(even) .img-container { order: 2; }
+
+        .img-container {
+            position: relative;
+            border-radius: 40px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+            aspect-ratio: 16 / 9;
+            background: #111; /* Dark placeholder if image is missing */
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: transform 0.8s ease;
+        }
+
+        .specimen-row:hover img { transform: scale(1.05); }
+
+        .data-overlay {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background: rgba(0,0,0,0.7);
+            padding: 15px;
+            font-family: monospace;
+            font-size: 0.7rem;
+            color: var(--genesyn-green);
+            border-left: 2px solid var(--genesyn-green);
+            z-index: 10;
+        }
+
+        .info-pane h2 { font-size: clamp(2rem, 5vw, 4rem); font-weight: 900; letter-spacing: -2px; margin-bottom: 20px; text-transform: uppercase; }
+        .info-pane p { color: #888; margin-bottom: 40px; font-size: 1.1rem; max-width: 500px; }
+
+        /* Stats */
+        .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .stat-item { background: var(--glass); padding: 20px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); }
+        .stat-label { font-size: 0.6rem; color: #555; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 5px; }
+        .stat-value { font-weight: 900; font-size: 1.1rem; }
+
+        footer { padding: 80px 10%; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); color: #333; font-size: 0.6rem; letter-spacing: 3px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html"><img src="genesynlong.png" alt="Genesyn" class="logo-long"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="science.html">Science</a>
+            <a href="species.html">Species</a>
+            <a href="#" style="border: 1px solid white; padding: 8px 20px; border-radius: 50px;">Portal</a>
+        </div>
+    </nav>
+
+    <header>
+        <span class="tag">The Legacy Catalog</span>
+        <h1>ASSET<br>PORTFOLIO.</h1>
+    </header>
+
+    <section class="species-list">
+        
+        <div class="specimen-row">
+            <div class="img-container">
+                <div class="data-overlay">REF: GEN-M01 // BIOME: ARCTIC <br> SEQUENCE_STABILITY: 98.4%</div>
+                <img src="mammoth_concept.jpg" alt="Woolly Mammoth Cinematic Concept">
+            </div>
+            <div class="info-pane">
+                <h2>THE MAMMOTH</h2>
+                <p>Engineered for the Pleistocene Park initiative, restoring keystone megafauna to combat global permafrost melt.</p>
+                <div class="stat-grid">
+                    <div class="stat-item"><span class="stat-label">Status</span><span class="stat-value" style="color:var(--genesyn-green)">INCUBATING</span></div>
+                    <div class="stat-item"><span class="stat-label">Batch</span><span class="stat-value">A-SERIES</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="specimen-row">
+            <div class="info-pane">
+                <h2>THE THYLACINE</h2>
+                <p>The return of the Tasmanian apex predator. A fundamental correction to the Australian ecological imbalance.</p>
+                <div class="stat-grid">
+                    <div class="stat-item"><span class="stat-label">Status</span><span class="stat-value" style="color:var(--genesyn-green)">RELEASED</span></div>
+                    <div class="stat-item"><span class="stat-label">Units</span><span class="stat-value">24 ACTIVE</span></div>
+                </div>
+            </div>
+            <div class="img-container">
+                <div class="data-overlay">REF: GEN-T42 // BIOME: BUSHLAND <br> PREDATORY_DRIVE: OPTIMIZED</div>
+                <img src="thylacine_concept.jpg" alt="Thylacine Cinematic Concept">
+            </div>
+        </div>
+
+        <div class="specimen-row">
+            <div class="img-container">
+                <div class="data-overlay" style="color:#ff3e3e; border-color:#ff3e3e;">REF: APEX-001 // BIOME: RESTRICTED <br> CONTAINMENT: LEVEL 5</div>
+                <img src="trex_lab_concept.jpg" alt="T-Rex Laboratory Concept">
+            </div>
+            <div class="info-pane">
+                <h2 style="color:#ff3e3e;">PROJECT APEX</h2>
+                <p>The crown jewel of de-extinction science. A massive undertaking in biological architecture and containment sovereignty.</p>
+                <div class="stat-grid">
+                    <div class="stat-item"><span class="stat-label">Risk Level</span><span class="stat-value" style="color:#ff3e3e">CRITICAL</span></div>
+                    <div class="stat-item"><span class="stat-label">Protocol</span><span class="stat-value">BIO-LOCK™</span></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>GENESYN SPECIES DATABASE // INTERNAL DOCUMENT 882-B // FOR AUTHORIZED VIEWING ONLY</p>
+    </footer>
+
+</body>
+</html>

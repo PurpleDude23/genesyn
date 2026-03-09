@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Science | Genesyn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --genesyn-green: #5ebc61; --deep-black: #050505; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--deep-black); color: white; line-height: 1.6; }
+
+        nav { padding: 30px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .logo-long { height: 30px; filter: brightness(0) invert(1); }
+        .nav-links a { color: white; text-decoration: none; margin-left: 30px; font-weight: 700; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; }
+
+        header { padding: 150px 10% 100px; }
+        header h1 { font-size: clamp(4rem, 12vw, 9rem); font-weight: 900; letter-spacing: -5px; line-height: 0.85; }
+
+        .tech-grid { padding: 100px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: start; }
+        .tech-content h2 { font-size: 3.5rem; font-weight: 900; letter-spacing: -2px; margin-bottom: 30px; }
+        .tech-content p { color: #888; font-size: 1.2rem; margin-bottom: 40px; }
+
+        .feature-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 40px; border-radius: 30px; position: relative; }
+        .feature-card h3 { color: var(--genesyn-green); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; }
+
+        .diagram-box { 
+            position: relative;
+            background: #111;
+            border-radius: 40px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+            aspect-ratio: 4 / 5;
+            background-image: url('https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=2000');
+            background-size: cover;
+        }
+
+        .data-stream { position: absolute; top: 20px; left: 20px; font-family: monospace; font-size: 0.65rem; color: var(--genesyn-green); line-height: 1.2; }
+        
+        footer { padding: 80px 10%; text-align: center; opacity: 0.3; font-size: 0.7rem; border-top: 1px solid rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="genesynlong.png" alt="Genesyn" class="logo-long"></a>
+        <div class="nav-links"><a href="index.html">Home</a><a href="species.html">Species</a></div>
+    </nav>
+
+    <header>
+        <span style="color:var(--genesyn-green); font-weight:700; letter-spacing:4px;">THE ARCHITECTURE OF LIFE</span>
+        <h1>GENETIC<br>SYNTHESIS.</h1>
+    </header>
+
+    <section class="tech-grid">
+        <div class="diagram-box">
+            <div class="data-stream">
+                RUNNING SEQUENCE_REPAIR...<br>
+                MATCH FOUND: 88.2%<br>
+                SPLICING PROXY DNA...<br>
+                STABILITY: OPTIMAL
+            </div>
+        </div>
+        <div class="tech-content">
+            <h2>RECLAIMING THE PAST</h2>
+            <p>Our CRISPR-Cas99 clusters allow us to reach back millions of years. When a genetic sequence is incomplete, our AI bridges the gaps using modern proxies to create a "stable ancestor."</p>
+
+            
+
+[Image of CRISPR-Cas9 gene editing diagram]
+
+
+            <div class="feature-card">
+                <h3>Bio-Lock™ Protocol</h3>
+                <p>Every organism we create is physically dependent on our proprietary nutrient supplements. Outside our facilities, life does not "find a way"—it stops. That is the Genesyn promise.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-grid" style="padding-top:0;">
+        <div class="tech-content">
+            <h2>QUANTUM SEQUENCING</h2>
+            <p>We process billions of genomic data points per second. This speed allows us to move from bone fragment to living specimen in record time.</p>
+            <a href="index.html" style="color:white; font-weight:900; text-decoration:none; border:1px solid white; padding:15px 30px; border-radius:50px; font-size:0.8rem;">BACK TO OVERVIEW</a>
+        </div>
+        <div class="diagram-box" style="background-image: url('https://images.unsplash.com/photo-1530026405186-ed1f139313f8?q=80&w=2000');"></div>
+    </section>
+
+    <footer>GENESYN SCIENCE // LEVEL 5 SECURITY CLEARANCE REQUIRED</footer>
+</body>
+</html>

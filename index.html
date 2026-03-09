@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesyn | The De-Extinction Company</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --genesyn-green: #5ebc61; --deep-black: #050505; --glass: rgba(255, 255, 255, 0.05); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--deep-black); color: white; overflow-x: hidden; scroll-behavior: smooth; }
+
+        nav { position: fixed; width: 100%; padding: 30px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent); }
+        .logo-long { height: 35px; filter: brightness(0) invert(1); }
+        .nav-links a { color: white; text-decoration: none; margin-left: 30px; font-weight: 700; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560'); /* Deep forest */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 { font-weight: 900; font-size: clamp(4rem, 15vw, 10rem); line-height: 0.8; letter-spacing: -6px; margin-bottom: 20px; }
+        .hero p { font-size: 1.5rem; font-weight: 300; max-width: 800px; opacity: 0.7; margin-bottom: 40px; }
+        
+        .btn-main { padding: 22px 50px; background: white; color: black; text-decoration: none; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; border-radius: 100px; transition: 0.4s; }
+        .btn-main:hover { background: var(--genesyn-green); color: white; transform: scale(1.05); }
+
+        .mission-section { padding: 150px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        .mission-text h2 { font-size: 4rem; font-weight: 900; line-height: 0.9; margin-bottom: 20px; letter-spacing: -2px; }
+        .mission-text p { color: #888; font-size: 1.2rem; margin-bottom: 30px; }
+
+        .stat-banner { background: var(--glass); padding: 80px 10%; display: flex; justify-content: space-around; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .stat-box h4 { font-size: 3rem; font-weight: 900; color: var(--genesyn-green); }
+        .stat-box span { text-transform: uppercase; letter-spacing: 2px; font-size: 0.7rem; color: #555; }
+
+        footer { padding: 100px 10%; text-align: center; color: #333; font-size: 0.7rem; letter-spacing: 2px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="genesynlong.png" alt="Genesyn" class="logo-long">
+        <div class="nav-links">
+            <a href="science.html">Science</a>
+            <a href="species.html">Species</a>
+            <a href="#" style="border: 1px solid white; padding: 10px 25px; border-radius: 50px;">Portal</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <span style="color:var(--genesyn-green); font-weight:700; letter-spacing:4px; margin-bottom:10px;">ESTABLISHED 2024</span>
+        <h1>MAKE<br>EXTINCTION<br>EXTINCT.</h1>
+        <p>Genesyn is the global leader in de-extinction, utilizing the code of life to fix a broken planet.</p>
+        <a href="species.html" class="btn-main">Browse the Portfolio</a>
+    </section>
+
+    <section class="mission-section">
+        <div class="mission-text">
+            <h2>NATURE,<br>OPTIMIZED.</h2>
+            <p>We don't just study history; we rewrite it. By bringing back keystone species, we are restoring the Earth to its original, high-performance state.</p>
+            <a href="science.html" style="color:var(--genesyn-green); font-weight:900; text-decoration:none; letter-spacing:1px;">LEARN THE METHODOLOGY →</a>
+        </div>
+        <div style="background: url('https://images.unsplash.com/photo-1500829243541-74b677fecc30?q=80&w=2000'); height: 500px; background-size: cover; border-radius: 40px; border: 1px solid rgba(255,255,255,0.1);"></div>
+    </section>
+
+    <div class="stat-banner">
+        <div class="stat-box"><h4>98.4%</h4><span>Genomic Accuracy</span></div>
+        <div class="stat-box"><h4>12</h4><span>Species Restored</span></div>
+        <div class="stat-box"><h4>0.0%</h4><span>Containment Breach</span></div>
+    </div>
+
+    <footer>© 2026 GENESYN GLOBAL // THE FUTURE OF BIOLOGICAL SOVEREIGNTY</footer>
+</body>
+</html>
