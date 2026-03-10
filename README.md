@@ -1,10 +1,22 @@
+<p align="center">
+  <img src="genesynlong.png" width="600" alt="GENESYN_GLOBAL_SYSTEM_FAILURE">
+  <br>
+  <b>[ERROR: LOGO_INTEGRITY_COMPROMISED_882]</b>
+</p>
+
 # 🧬 G̶E̶N̶E̶S̶Y̶N̶ GLOBAL
 ### [STATUS: O̶P̶E̶R̶A̶T̶I̶N̶G̶ // C̶O̶M̶P̶R̶O̶M̶I̶S̶E̶D̶] // SECTOR 7 // [ENCRYPTED]
 
-> **ERROR_LOG_882:** Unexpected sequence gap detected in Asset-M1. 
-> `[STABILITY_CRITICAL] [CONTAINMENT_OFFLINE]`
+> **SYSTEM_NOTICE:** Unauthorized access detected in `genesyn_core_v4`. 
+> `[BOOT_SEQUENCE_INTERRUPTED]` `[VISUAL_DATA_CORRUPT]`
 
-Welcome to the central repository for the world leader in de-extinction technology. At Genesyn, we don't just study the past; we own the future—**[ERROR: SUBJECT_01_NOT_FOUND]**.
+---
+
+<p align="center">
+  <img src="Genesyn.png" width="150" alt="Genesyn Icon">
+  <br>
+  <i>"The future is built on the bones of the past."</i>
+</p>
 
 ---
 
